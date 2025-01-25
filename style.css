@@ -17,6 +17,7 @@ Roxo:918EF4
 *{
     font-family: "PixelP",monospace;
     background-color: var(--azulC);
+    text-align: center;
 }
 :root{
     --azulC:#98B9F2 ;
