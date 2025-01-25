@@ -8,23 +8,38 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       h1 {
-        font-size: 4em;
+        font-size: 6em;
       }
       h2{
-        font-size: 3em;
+        font-size: 4em;
       }
       h3{
-        font-size: 2.5em;
+        font-size: 3.5em;
+        margin-top: 5px;
       }
       a{
-        font-size: 2em;
+        font-size: 3em;
+      }
+      div{
+        font-size: 3em;
+        
+      }
+      input{
+        font-size: 0.75em;
+        display: block;
+        margin-left: 43.5%;
       }
     </style>
   </head>
   <body>
     <h1>Bubble Kingdom é um jogo de escolhas</h1>
     <h2>Você será inserido em situações na qual a sua atitude mudará o desfecho <br> você tem total liberdade para escolher a opção que desejar, porém assumirá também as consequências</h2>
-    <h2>Boa Sorte!</h3>
+    <div>
+      <label for="userInput">Insira o nome de seu héroi:</label>
+      <input type="text" id="userInput" placeholder="Digite aqui...">
+    </div>
+    <p id="output"></p>
+    <h3>Boa Sorte!</h3>
     <a href="cena1.html" class="interativo">COMEÇAR</a>
   </body>
 </html>

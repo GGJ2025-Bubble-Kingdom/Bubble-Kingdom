@@ -33,7 +33,7 @@ Roxo:918EF4
 
 @keyframes digitar {
     0%,100%{
-        content: "Alfinete";
+        content: "Teste";
     }
     
 }
@@ -43,7 +43,7 @@ Roxo:918EF4
 }
 .textdigitado span::before{
     content: "";
-    color: pink;
+    color: rgb(235, 10, 10);
     animation: digitar 20s infinite;
 }
 .textdigitado span::after{
