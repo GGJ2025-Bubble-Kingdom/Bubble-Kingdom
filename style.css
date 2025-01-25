@@ -14,33 +14,58 @@ Roxo:918EF4
     font-family: 'PixelE';
     src: url(Recursos/Silkscreen/slkscr.ttf);
 }
-
 *{
     font-family: "PixelP",monospace;
-    background-color: #51A2F2;
-    --corLeve : color:red ;
+    background-color: var(--azulC);
 }
 :root{
-    --corLeve : color:red ;
+    --azulC:#98B9F2 ;
+    --azulE:#141B41;
+    --azulM:#6F9CEB;
+    --azul:#306BAC;
+    --roxo:#918EF4;
+
 }
 
 
-.AzulE{
-    color: #141B41;
+@keyframes digitar {
+    0%,100%{
+        content: "Alfinete";
+    }
+    
+}
+.textdigitado span{
+    position: relative;
+    font-size: 1.5em;
+}
+.textdigitado span::before{
+    content: "";
+    color: pink;
+    animation: digitar 20s infinite;
+}
+.textdigitado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    right: -10px;
+    animation: cursor 20s, digitando 10s steps(15);
+    width: 0px;
+    background-color: #98B9F2;
 }
 
-.Azul{
-    color: #306BAC;
+@keyframes cursor {
+    0%{
+        width: calc(100% + 14px);;
+
+    }
 }
 
-.AzulM{
-    color: #6F9CEB;
-}
-
-.AzulC{
-    color: #98B9F2;
-}
-
-.Roxo{
-    color: #918EF4;
+@keyframes digitando{
+    10%,99%{
+        width: 0px;
+    }
+    100%{
+        opacity: 0;
+    }
+    
 }
