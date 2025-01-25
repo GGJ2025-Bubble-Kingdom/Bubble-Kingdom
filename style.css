@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*
+AzulEscuro:141B41
+Azul Meio:306BAC
+Azul Mid:6F9CEB
+Azul Claro:98B9F2
+Roxo:918EF4
+*/
+@font-face {
+    font-family: 'PixelP';
+    src: url(Recursos/sh-pinscher/SHPinscher-Regular.otf);
+}
+@font-face {
+    font-family: 'PixelE';
+    src: url(Recursos/Silkscreen/slkscr.ttf);
+}
+
+*{
+    font-family: "PixelP",monospace;
+    background-color: #51A2F2;
+    --corLeve : color:red ;
+}
+:root{
+    --corLeve : color:red ;
+}
+
+
+.AzulE{
+    color: #141B41;
+}
+
+.Azul{
+    color: #306BAC;
+}
+
+.AzulM{
+    color: #6F9CEB;
+}
+
+.AzulC{
+    color: #98B9F2;
+}
+
+.Roxo{
+    color: #918EF4;
+}
