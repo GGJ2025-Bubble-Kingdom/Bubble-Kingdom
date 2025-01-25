@@ -16,12 +16,13 @@ Roxo:918EF4
 }
 *{
     font-family: "PixelP",monospace;
-    background-color: var(--azulC);
+    background-color: var(--azulE);
     text-align: center;
+    color: white;
 }
 :root{
     --azulC:#98B9F2 ;
-    --azulE:#141B41;
+    --azulE:#121a42;
     --azulM:#6F9CEB;
     --azul:#306BAC;
     --roxo:#918EF4;
