@@ -74,7 +74,10 @@ Roxo:918EF4
 }
 
 
-.interativo:hover{
+a:hover{
     color: var(--azulM);
 
+}
+a{
+    text-decoration: none;
 }
