@@ -8,11 +8,11 @@ Roxo:918EF4
 */
 @font-face {
     font-family: 'PixelP';
-    src: url(Recursos/sh-pinscher/SHPinscher-Regular.otf);
+    src: url(src/sh-pinscher/SHPinscher-Regular.otf);
 }
 @font-face {
     font-family: 'PixelE';
-    src: url(Recursos/Silkscreen/slkscr.ttf);
+    src: url(src/Silkscreen/slkscrb.ttf);
 }
 *{
     font-family: "PixelP",monospace;

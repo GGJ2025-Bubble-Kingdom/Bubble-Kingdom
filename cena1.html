@@ -4,25 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble Kingdom: The Game</title>
-    <link rel="shortcut icon" href="Midias/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <style>
-        body{
-            font-size: 0.75em;
-        }
-        img{
-            
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-        }
+      body {
+        font-size: 0.75em;
+      }
+      img {
+        max-width: 200px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+      }
 
-        span{
-            color:red;
-            font-family: 'PixelE';
-            font-size: 1em;
-        }
+      span {
+        color: red;
+        font-family: "PixelE";
+        font-size: 1em;
+      }
     </style>
   </head>
   <body>
@@ -30,12 +29,15 @@
       O mundo está sofrendo um ataque de Bolhas, qualquer coisa que seja tocada
       por uma bolha, é consumida eternamente
     </h1>
-    <span style="font-size: 3em;">VOCE</span>
+    <span id="choosenName" style="font-size: 3em;"  ></span>
+    <script>
+       const heroName = (localStorage.getItem('heroName') || 'SEU HEROI').toUpperCase();
+       const choosenName = document.getElementById('choosenName');
+      choosenName.innerHTML = `<span   class="hero-name">${heroName}</span>`;
+
+    </script>
     <div>
-      <img
-        src="Midias/Cavaleiro.png"
-        alt="protagonista é um cavaleiro"
-      />
+      <img src="src/Cavaleiro.png" alt="protagonista é um cavaleiro" />
     </div>
     <h1>
       é o unico que pode enfreta-las com a arma mais poderosa do mundo <br />
@@ -43,9 +45,13 @@
     </h1>
 
     <div>
-      <img src="Midias/alfinete.png" alt="alfinete pixel arte vermelho" />
+      <img src="src/alfinete.png" alt="alfinete pixel arte vermelho" />
     </div>
 
-    <a href="combate1.html" style="text-decoration: none ;color: #6F9CEB;font-size: 2em;">continuar</a>
+    <a
+      href="combate1.html"
+      style="text-decoration: none; color: #6f9ceb; font-size: 2em"
+      >continuar</a
+    >
   </body>
 </html>
