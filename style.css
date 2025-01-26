@@ -33,7 +33,7 @@ Roxo:918EF4
 
 @keyframes digitar {
     0%,100%{
-        content: "Teste";
+        content: "VITÓRIA";
     }
     
 }
@@ -43,7 +43,7 @@ Roxo:918EF4
 }
 .textdigitado span::before{
     content: "";
-    color: rgb(235, 10, 10);
+    color: rgb(255, 217, 0);
     animation: digitar 20s infinite;
 }
 .textdigitado span::after{
@@ -51,9 +51,9 @@ Roxo:918EF4
     position: absolute;
     height: 100%;
     right: -10px;
-    animation: cursor 20s, digitando 10s steps(15);
+    animation: cursor 25s, digitando 15s steps(15);
     width: 0px;
-    background-color: #98B9F2;
+    background-color: var(--azulE);
 }
 
 @keyframes cursor {
@@ -80,6 +80,7 @@ a:hover{
 }
 a{
     text-decoration: none;
+    font-family: var(--fontPica);
 }
 
 .hero-name{

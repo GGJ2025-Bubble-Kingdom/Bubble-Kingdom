@@ -16,14 +16,14 @@
           height: auto;
         }
         a{
-          font-size: 5em;
+          font-size: 3em;
           display: flexbox;
           justify-content: space-around;
           margin-right: 10vh;
         }
         span{
             font-family: 'PixelE';
-            color: #918EF4;
+            
         }
         h1{
             font-size: 2.20em;
@@ -33,6 +33,7 @@
   <body>
     
     <audio src="src/menu.mp3" autoplay></audio>
+    <audio src="src/Bubble - MUSIC FREE COPYRIGHT Combate.mp3" autoplay></audio>
     <h1><span id="choosenName"></span> Encontrou seu maior inimigo.</h1>
     <script>
       const heroName = (
@@ -41,7 +42,7 @@
       const choosenName = document.getElementById("choosenName");
       choosenName.innerHTML = `<span   class="hero-name">${heroName}</span>, `;
     </script>
-    <h1>DOS CONFINS DO OCEANO, <span>OCTABUBBLE</span> TRANSFORMOU O REINO EM BOLHAS! <br> AGORA O QUE NOSSO HERÓI FARÁ?</h1>
+    <h1>DOS CONFINS DO OCEANO, <span style="color: #918EF4;">OCTABUBBLE</span> TRANSFORMOU O REINO EM BOLHAS! <br> AGORA O QUE NOSSO HERÓI FARÁ?</h1>
     
     <img src="src/Cavaleiro alfinete.png" alt="cavaleiro com alfinete" />
     <img style="display: inline-block;"
@@ -50,7 +51,7 @@
     />
     <div>
     <a href="combate3.html">LUTAR</a>
-    <a href="cena3.html">CONVERSAR</a>
+    <a href="vitoria2.html">CONVERSAR</a>
     <a href="morreu Octa.html">FUGIR</a>
 </div>
   </body>

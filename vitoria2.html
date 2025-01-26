@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Kingdom: The Game</title>
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      div {
+        font-size: 5em;
+        margin-top: 5vh;
+        display: block;
+      }
+      a{
+        font-size: 2em;
+      }
+      
+    img{
+        
+    max-width:200px;
+    max-height:120;
+    width: auto;
+    height: auto;
+    margin-left: 43%;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    display: block;
+    }
+    h1{
+        font-size: 1.6em;
+        margin: 15px;
+    }
+        
+    </style>
+  </head>
+  <body>
+      <div class="textdigitado">
+          <span></span>
+        </div>
+        <img src="src/badneira1.png" alt="herói com bandeira">
+    <h1 id="choosenName"></h1>
+    <script>
+      const heroName = (
+        localStorage.getItem("heroName") || "SEU HEROI"
+      ).toUpperCase();
+      const choosenName = document.getElementById("choosenName");
+      choosenName.innerHTML = `<h1> <span class="hero-name">${heroName}</span> convenceu o  <span style="color: #918EF4;">OCTABUBBLE</span>  a desfazer suas maldades e o reino ficou em paz, você é o herói de todos!  `;
+    </script>
+    <a href="index.html">Jogar Novamente</a>
+  </body>
+</html>
