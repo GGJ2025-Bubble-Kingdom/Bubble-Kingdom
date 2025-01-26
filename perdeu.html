@@ -9,8 +9,8 @@
   </head>
   <style>
     img {
-      max-width: 500px;
-      max-height: 220;
+      max-width: 340px;
+      max-height: 180;
       width: auto;
       height: auto;
       margin-left: 2em;
@@ -27,6 +27,7 @@
     }
   </style>
   <body>
+    <audio src="src/PegoBolha.mp3" autoplay></audio>
     <h1 id="choosenName"></h1>
     <img src="src/grave.png" alt="lapide de derrota" />
     <script>
@@ -36,7 +37,8 @@
       const choosenName = document.getElementById("choosenName");
       choosenName.innerHTML = `<span class="hero-name">${heroName}</span>, Você realmente achou que a melhor escolha que poderia fazer era tentar <br /> conversar com uma Bolha? Acho que ela não é muito de falar.`;
     </script>
-
-    <a href="menu.html">Voce perdeu, tente novamente.</a>
+    <h2 style=" display: block;font-size: 2em; font-family: 'PixelE';
+    margin-top: 0.05px;">Voce foi bolhado.</h2>
+    <a href="menu.html" style="margin-top: 0.1px;padding: 0px;">  tente novamente.</a>
   </body>
 </html>

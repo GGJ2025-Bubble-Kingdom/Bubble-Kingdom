@@ -6,8 +6,34 @@
     <title>Bubble Kingdom: The Game</title>
     <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+      }
+      a{
+        font-size: 2em;
+        display: block;
+        margin-top: 15vh;
+      }
+      
+    </style>
 </head>
 <body>
   <audio src="src/FuraBolha.mp3" autoplay></audio>  
+  <h1>Após derrotar a poderosa Bolha-Mor,</h1>
+  <span id="choosenName" style="font-size: 3em;"  ></span>
+  <script>
+     const heroName = (localStorage.getItem('heroName') || 'SEU HEROI').toUpperCase();
+     const choosenName = document.getElementById('choosenName');
+    choosenName.innerHTML = `<span   class="hero-name">${heroName}</span> `;
+
+  </script>
+  <h1>seguiu seu caminho na busca do criador desse caos, ceifando a vida de diversas bolhas no processo</h1>
+  <img src="src/cavaWalk.gif" alt="cavaleiro andando">
+  <audio src="src/SOUND EFFECT ARMOR WALKING [ ezmp3.cc ].mp3" loop autoplay></audio>
+  <a href="combate2.html">continuar</a>
 </body>
 </html>

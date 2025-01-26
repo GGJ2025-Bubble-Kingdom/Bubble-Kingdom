@@ -9,8 +9,8 @@
   </head>
   <style>
     img {
-      max-width: 500px;
-      max-height: 220;
+      max-width: 400px;
+      max-height: 300px;
       width: auto;
       height: auto;
       margin-left: 2em;
@@ -25,8 +25,12 @@
       font-family: "PixelE";
       margin-top: 0.5em;
     }
+    h1{
+      font-size: 2em;
+    }
   </style>
   <body>
+    <audio src="src/PegoBolha.mp3" autoplay></audio>
     <h1 id="choosenName"></h1>
     <img src="src/grave.png" alt="lapide de derrota" />
     <script>
@@ -34,7 +38,7 @@
         localStorage.getItem("heroName") || "SEU HEROI"
       ).toUpperCase();
       const choosenName = document.getElementById("choosenName");
-      choosenName.innerHTML = `<span class="hero-name">${heroName}</span> fica aterrorizado com o poder da Bolha-Mor e tenta fugir <br /> Porém ela é rápida de mais, não há o que fazer senão enfrenta-lá.`;
+      choosenName.innerHTML = `<span class="hero-name">${heroName}</span> fica aterrorizado com o poder da Bolha-Mor e tenta fugir <br /> Porém ela é rápida de mais, e <span class="hero-name">${heroName}</span> é engolido.`;
     </script>
 
     <a href="menu.html">Voce perdeu, tente novamente.</a>
