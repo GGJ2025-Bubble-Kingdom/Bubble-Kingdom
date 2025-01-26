@@ -15,16 +15,22 @@
       }
       h3 {
         font-size: 1.80em;
-        margin-top: 5px;
+        margin-top: 35px;
       }
       a {
         font-size: 2em;
       }
       div {
         font-size: 2em;
+        width: 1400px;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+        background-color: #141B41;
       }
       input {
-        font-size: 0.75em;
+        font-size: 0.77em;
+        color: #98B9F2;
         display: block;
         margin-left: 42%;
         border: 0px;
@@ -37,17 +43,26 @@
   <body>
     <h1>Bubble Kingdom é um jogo de escolhas</h1>
     <h2>
-      Você será inserido em situações na qual a sua atitude mudará o desfecho
+      Você será inserido em situações na qual a sua atitude mudará o desfecho da história.
       <br />
        Terá total liberdade para escolher a opção que desejar, porém assumirá
       também as consequências!
     </h2>
     <div>
-      <label for="userInput">Insira o nome de seu héroi:</label>
-      <input type="text" id="userInput" placeholder="Digite aqui..." />
+      <label for="userInput">Seu héroi se chamará:</label>
+      <input type="text" id="userInput" placeholder="Digite aqui" />
     </div>
-    <p id="output"></p>
     <h3>Boa Sorte!</h3>
+    <script>
+
+    const inputElement = document.getElementById('userInput');
+
+      inputElement.addEventListener('input', function () {
+        const heroName = inputElement.value.toUpperCase();
+        localStorage.setItem('heroName', heroName);
+      });
+
+      </script>
     <a href="cena1.html" class="interativo">COMEÇAR</a>
   </body>
 </html>

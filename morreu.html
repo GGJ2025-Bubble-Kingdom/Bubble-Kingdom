@@ -7,7 +7,41 @@
     <link rel="shortcut icon" href="Midias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+
+        img{
+        
+        max-width:500px;
+        max-height:220;
+        width: auto;
+        height: auto;
+        margin-left: 2em;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        display: flexbox;
+        }
+
+        a{
+        display: block;
+        font-size: 2em;
+        font-family: 'PixelE';
+        margin-top: 0.5em;
+
+        }        
+
+</style>
 <body>
+    <h1 id="choosenName"></h1>
+    <img src="Midias/grave.png" alt="lapide de derrota">
+    <script>
+
+        const heroName = (localStorage.getItem('heroName') || 'SEU HEROI').toUpperCase();
+        const choosenName = document.getElementById('choosenName');
+        choosenName.innerHTML = `<span class="hero-name">${heroName}</span> fica aterrorizado com o poder da Bolha-Mor e tenta fugir <br /> Porém ela é rápida de mais, não há o que fazer senão enfrenta-lá.`;
+
+    </script>
+    
+    <a href="menu.html">Voce perdeu, tente novamente.</a>
     
 </body>
 </html>
