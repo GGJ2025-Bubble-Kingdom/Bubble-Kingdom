@@ -31,12 +31,14 @@
     
 </style>
 <body>
+    
+    <audio src="src/menu.mp3" autoplay></audio>
 <h1 id="choosenName"></h1>
 <script> 
 
     const heroName = (localStorage.getItem('heroName') || 'SEU HEROI').toUpperCase();
     const choosenName = document.getElementById('choosenName');
-    choosenName.innerHTML = `<span class="hero-name">${heroName}</span> ENCONTRA UM ADVERSÁRIO FORMIDAVEL, A BOLHA-MOR, O QUE VOCÊ FARÁ NESSA SITUAÇÃO?`;
+    choosenName.innerHTML = `<span class="hero-name">${heroName}</span> ENCONTRA UM ADVERSÁRIO FORMIDÁVEL, A BOLHA-MOR, O QUE VOCÊ FARÁ NESSA SITUAÇÃO?`;
 
 </script>
 <img src="src/Cavaleiro alfinete.png" alt="cavaleiro com seu alfinete">
